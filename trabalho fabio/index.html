@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Presença Escolar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sistema de Presença Escolar</h1>
+    
+    <form id="form-presenca">
+      <input type="text" id="nome" placeholder="Nome do Aluno" required>
+      <input type="text" id="matricula" placeholder="Matrícula" required>
+      <input type="text" id="turma" placeholder="Turma" required>
+      <input type="date" id="data" required>
+      <button type="submit">Registrar Presença</button>
+    </form>
+
+    <h2>Lista de Presenças</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Matrícula</th>
+          <th>Turma</th>
+          <th>Total de Presenças</th>
+          <th>Datas</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-presencas">
+        <!-- Conteúdo gerado via JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
